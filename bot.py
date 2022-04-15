@@ -53,7 +53,7 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
 # Start
 @xbot.on_message(filters.command('start') & filters.private)
 async def _start(bot, update):
-  await update.reply_text(f"Hallo {username} Saya adalah bot tiktod downloader!\nkamu dapat mengunduh video/audio dari tiktok menggunakan bot ini\nnKirimkan tautan link dari tiktok, lalu klik no watermark atau watermark (untuk video),Klik audio untuk mendapatkan audionya saja.", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
+  await update.reply_text(f"Hallo gaess Saya adalah bot tiktod downloader!\nkamu dapat mengunduh video/audio dari tiktok menggunakan bot ini\nnKirimkan tautan link dari tiktok, lalu klik no watermark atau watermark (untuk video),Klik audio untuk mendapatkan audionya saja.", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
 
 # Downloader for tiktok
 @xbot.on_message(filters.regex(pattern='.*http.*') & filters.private)
